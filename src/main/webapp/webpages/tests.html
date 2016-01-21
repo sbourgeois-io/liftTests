@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Home</title>
+</head>
+<body class="lift:content_id=main">
+	<div id="main" class="lift:surround?with=default;at=content well span6">
+		<h2>Ajax editable</h2>
+		<p></p>
+		<!-- <div class="lift:AjaxEditable.transform?eager_eval=true"> -->
+			<div class="lift:AjaxEditable">
+				<span>Ajax editable text</span>
+			</div>
+		<!-- </div> -->
+		<p></p>
+
+		<h2>Anchor</h2>
+		<p></p>
+		<div class="lift:Anchor">
+			<span>Anchor</span>
+		</div>
+		<p></p>
+
+		<h2>The Lazy hottest trend topic</h2>
+		<p></p>
+		<div class="lift:lazy-load?template=_LazyLoad">
+			<span class="lift:trendTopic.hottest"><span id="hottest">Hottest
+					trend topic goes here</span> </span>
+		</div>
+		<p></p>
+
+		<h2>The Lazy highest scores</h2>
+		<p></p>
+		<div class="lift:lazy-load?template=_LazyLoad">
+			<span class="lift:game"> <span id="gameName">Game's
+					name goes here</span> <span id="highestScore">Highest score goes
+					here</span>
+			</span>
+		</div>
+		<p></p>
+
+		<h2>The Parallel hottest trend topic</h2>
+		<p>
+		<p />
+
+		<!-- <span class="lift:trendTopic.hottest?parallel=true"><span
+			id="hottest">Hottest trend topic goes here</span> </span> -->
+		<p></p>
+
+
+		<h2>The Parallel highest scores</h2>
+		<p></p>
+		<!-- <span class="lift:game?parallel=true"> <span id="gameName">Game's
+				name goes here</span> <span id="highestScore">Highest score goes
+				here</span>
+		</span> -->
+		<p></p>
+
+		<h2>The Comet trend topic</h2>
+		<p></p>
+
+		<div class="lift:comet?type=CometTrendTopic">
+			<trend:hottest>Hottest trend topic goes here</trend:hottest>
+			<br />Last update:
+			<trend:time>Last update time goes here</trend:time>
+		</div>
+		<p></p>
+
+		<h2>idMemoize</h2>
+		<p></p>
+		<div class="lift:ShowMemoize">
+			<button name="refresh_all">Refresh All</button>
+
+			<div name="one">
+				<span>The current time is: </span>
+				<button>Click Me</button>
+			</div>
+
+			<div name="two">
+				<button>Update this</button>
+				<ul>
+					<li>Count:</li>
+				</ul>
+			</div>
+		</div>
+		<p></p>
+
+		<h2>Rectangle area calculator</h2>
+		<div>
+			<div>
+				Length: <input class="lift:RectangleAreaWiring.length">
+			</div>
+			<div>
+				Width: <input class="lift:RectangleAreaWiring.width">
+			</div>
+			<div>
+				Rectangle area: <span class="lift:RectangleAreaWiring.area">Area</span>
+				(square units)
+			</div>
+		</div>
+		
+		<h2>CSS transform</h2>
+		<div>
+			<div class="lift:CSStransformer.global">
+				<span>Some blabla </span>
+				<span>Some other bla bla </span>
+				<span>More bla bla</span>
+				<span>That's all with bla bla</span>
+			</div>
+			<div class="lift:CSStransformer">
+				<span id="thing">ID to be replaced</span>
+				<span class="amazing">Class to be replaced</span>
+				<input type="text" value="Some text to be replaced"></input>
+				<span name="somename">Name to be replaced</span>
+				<input type="button" value="Click me to be repalced"></input><br/>
+				<input type="text" value="Another text to be replaced"></input><br/>
+				<input type="text" class="amazing" value="Another text with class amazing to be replaced"></input>
+				<ul>
+					<li>Day 1 :</li>
+				</ul>
+				<ul>
+					<li>Day 2 :</li>
+				</ul>
+				<div id="apd">Welcome, </div>
+				<div id="prepend_target"> Welcome</div>
+				<textarea rows="2" cols="10" class="foo">text area with class foo will have bar appended</textarea>
+			</div>
+		</div>
+		
+		<h2>Lift Version</h2>
+		<div>
+			Version: <span class="lift:VersionInfo.lift"></span><br/>
+			Build date: <span class="lift:VersionInfo.date"></span>
+		</div>
+		
+		<h2>Object Snippet with rule dispatch</h2>
+		<div>
+			<span class="lift:howdy"></span>
+		</div>
+		
+		<h2>Statefull Snippet</h2>
+		<!-- <form> -->
+			<div class="lift:CountIncrement?form=post">
+				Count: <span id="count"></span>
+				<br/> <span id="increment"></span>
+			</div>
+		<!-- </form> -->
+		
+		<h2>Simple form</h2>
+		<form class="lift:NiceLiftForm?form=post">
+		  <p>
+		    <label for="animal">Animal:</label><br>
+		    <input id="animal" name="animal">
+		  </p><p>
+		    <label for="legs">Legs:</label><br>
+		    <input id="legs" name="legs">
+		  </p>
+		  <button type="submit">Submit</button>
+		</form>
+		
+		<h2>Message notification</h2>
+		<div class="lift:Messages?form=post">
+			Warning: <span class="warning"></span>
+			Error: <span class="error"></span>
+			Notice: <span class="notice"></span>
+			<button type="submit">Submit</button>
+		</div>
+		<!-- div>
+			<form class="lift:form.ajax well form-search">
+				<input class="lift:ChatIn input-medium search-query" id="chat_in"></input>
+				<input type="submit" class="btn btn-primary btn-large"
+					value="Say Something"></input>
+			</form>
+		</div-->
+	</div>
+</body>
+</html>
