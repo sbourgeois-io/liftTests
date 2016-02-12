@@ -96,7 +96,7 @@ class Boot {
     val ddLabel1 = Menu.i("UserDDLabel") / "ddlabel1"
     val home = Menu.i("Home!!!") / "index"
     //val chat = Menu.i("Chat") / "webpages/chat"
-    val chat = Menu(Loc("Chat", Link(List("chat"), true, "/webpages/chat"), S.loc("Chat", scala.xml.Text("Chat")), LocGroup("lg1")))
+    val chat = Menu(Loc("Chat", Link(List("webpages", "chat"), false, "/webpages/chat"), S.loc("Chat", scala.xml.Text("Chat")), LocGroup("lg1")))
     val tests = Menu.i("Tests") / "webpages/tests"
     //val view = Menu.i("View") / "viewthing/example"
     val view = Menu(Loc("View", Link(List("viewthing", "example"), false, "/viewthing/example"), "View", LocGroup("lg2")))
