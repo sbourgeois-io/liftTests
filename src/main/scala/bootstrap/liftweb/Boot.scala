@@ -103,7 +103,7 @@ class Boot {
     //val view2 = Menu.i("View2") / "Myview/sample"
     val view2 = Menu(Loc("View2", Link(List("Myview", "sample"), false, "/Myview/sample"), "View2", LocGroup("lg2")))
     //    val userMenu   = User.AddUserMenusHere
-    val radio = Menu(Loc("Radio", Link(List("radio"), true, "/webpages/radio"), S.loc("Radio", scala.xml.Text("Radio")), LocGroup("lg1")))
+    val radio = Menu(Loc("Radio", Link(List("webpages", "radio"), true, "/webpages/radio"), S.loc("Radio", scala.xml.Text("Radio")), LocGroup("lg1")))
     val static = Menu(Loc("Static", Link(List("static"), true, "/static/index"), S.loc("StaticContent", scala.xml.Text("Static Content")), LocGroup("lg2", "topRight")))
     val twbs = Menu(Loc("twbs", ExtLink("http://getbootstrap.com/"),             S.loc("Bootstrap3", Text("Bootstrap3")),                  LocGroup("lg2"), FoBo.TBLocInfo.LinkTargetBlank))
 
